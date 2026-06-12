@@ -1,0 +1,168 @@
+\documentclass[11pt]{article}
+\usepackage[margin=0.8in]{geometry}
+\usepackage{booktabs,float,amsmath,adjustbox}
+\begin{document}
+\section*{De La O--Myers (JF 2021) Tables III--VII: posted data vs reconstructed series}
+\begin{table}[H]
+\centering
+\caption{Correlation of Cash Flow Growth and Price Ratios (Table III)}
+\label{tab:t3}
+\small
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{llcccccc}
+\toprule
+Row & Source & Expected & Realized & Forecast error & Expected (rank) & Realized (rank) & FE (rank) \\
+\midrule
+A: Corr(pd$_t$, $\cdot$)  2003Q1-2022Q1 & DLM posted data & 0.68 (0.19) & 0.63 (0.19) & 0.01 (0.25) & 0.59 (0.20) & 0.51 (0.15) & -0.08 (0.22) \\
+ & Reconstructed & 0.53 (0.24) & 0.55 (0.28) & 0.21 (0.23) & 0.52 (0.20) & 0.31 (0.19) & -0.03 (0.21) \\
+ & DLM E$^*$, Shiller data & 0.47 (0.24) & 0.55 (0.28) & 0.19 (0.23) & 0.45 (0.22) & 0.31 (0.19) & -0.11 (0.22) \\
+ & Extrapolated E$^*$ & 0.58 (0.28) & 0.55 (0.28) & 0.10 (0.18) & 0.50 (0.20) & 0.31 (0.19) & -0.14 (0.21) \\
+ & Extrapolated E$^*$ (full) & 0.62 (0.26) & 0.62 (0.25) & 0.12 (0.18) & 0.49 (0.21) & 0.34 (0.20) & -0.11 (0.23) \\
+\addlinespace
+B: Corr(pe$_t$, $\cdot$)  2003Q1-2022Q1 & DLM posted data & 0.85 (0.21) & 0.62 (0.14) & 0.16 (0.09) & 0.72 (0.10) & 0.49 (0.14) & 0.25 (0.16) \\
+ & Reconstructed & 0.89 (0.17) & 0.60 (0.13) & 0.08 (0.07) & 0.73 (0.12) & 0.38 (0.14) & 0.12 (0.16) \\
+ & DLM E$^*$, Shiller data & 0.89 (0.16) & 0.60 (0.13) & 0.20 (0.08) & 0.68 (0.13) & 0.38 (0.14) & 0.18 (0.16) \\
+ & Extrapolated E$^*$ & 0.86 (0.13) & 0.60 (0.13) & 0.22 (0.11) & 0.76 (0.12) & 0.38 (0.14) & 0.03 (0.16) \\
+ & Extrapolated E$^*$ (full) & 0.90 (0.09) & 0.61 (0.11) & 0.25 (0.11) & 0.79 (0.11) & 0.40 (0.13) & 0.08 (0.16) \\
+\addlinespace
+B: Corr(pe$_t$, $\cdot$)  1976Q1-2002Q4 & DLM posted data & 0.74 (0.17) & 0.14 (0.16) & -0.48 (0.16) & 0.66 (0.14) & 0.28 (0.15) & -0.41 (0.17) \\
+ & Reconstructed & 0.76 (0.18) & 0.12 (0.18) & -0.48 (0.17) & 0.70 (0.13) & 0.24 (0.17) & -0.43 (0.17) \\
+ & DLM E$^*$, Shiller data & 0.71 (0.19) & 0.12 (0.18) & -0.48 (0.17) & 0.61 (0.16) & 0.24 (0.17) & -0.42 (0.18) \\
+ & Extrapolated E$^*$ & 0.69 (0.15) & 0.12 (0.18) & -0.38 (0.17) & 0.63 (0.15) & 0.24 (0.17) & -0.39 (0.18) \\
+ & Extrapolated E$^*$ (full) & 0.67 (0.16) & 0.09 (0.18) & -0.42 (0.19) & 0.63 (0.15) & 0.21 (0.17) & -0.40 (0.18) \\
+\addlinespace
+B: Corr(pe$_t$, $\cdot$)  1976Q1-2022Q1 & DLM posted data & 0.73 (0.17) & 0.30 (0.16) & -0.21 (0.11) & 0.65 (0.11) & 0.36 (0.11) & -0.18 (0.15) \\
+ & Reconstructed & 0.74 (0.20) & 0.32 (0.19) & -0.19 (0.11) & 0.66 (0.10) & 0.28 (0.12) & -0.21 (0.15) \\
+ & DLM E$^*$, Shiller data & 0.74 (0.18) & 0.32 (0.19) & -0.16 (0.14) & 0.60 (0.12) & 0.28 (0.12) & -0.20 (0.15) \\
+ & Extrapolated E$^*$ & 0.73 (0.15) & 0.32 (0.19) & -0.11 (0.15) & 0.63 (0.11) & 0.28 (0.12) & -0.23 (0.15) \\
+ & Extrapolated E$^*$ (full) & 0.75 (0.15) & 0.33 (0.21) & -0.08 (0.17) & 0.63 (0.11) & 0.26 (0.12) & -0.22 (0.15) \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+
+\vspace{2pt}
+{\footnotesize Notes: Correlations of price ratios with expected one-year growth, realized future one-year growth, and forecast errors (realized minus expected). Quarterly data. "(rank)" columns are Spearman correlations (Pearson on within-sample ranks), robust to the GFC leverage quarters that dominate the Pearson forecast-error correlation in the 2003-2015 sample. Sources: "DLM posted data" = De La O-Myers posted expectations, realized growth, and price ratios (replicates their tables); "Reconstructed" = our expectations with Shiller-based realized growth and price ratios; "DLM E$^*$, Shiller data" = DLM expectations on the same Shiller-based realized growth and price ratios as the reconstruction. Small-sample-adjusted Newey-West standard errors in parentheses (4 lags). Correlation SEs computed as standardized-OLS slopes (on the ranked series for the rank columns).}
+\end{table}
+\begin{table}[H]
+\centering
+\caption{Variance Decomposition of Price Ratios, One-Year Estimates (Table IV)}
+\label{tab:t4}
+\small
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{llccc}
+\toprule
+Row & Source & CF1 & DR1 & LT \\
+\midrule
+Price-dividend ratio  2003Q1-2022Q1 & DLM posted data & 0.258 (0.093) & -0.047 (0.014) & 0.789 (0.092) \\
+ & Reconstructed & 0.212 (0.096) & -0.048 (0.016) & 0.836 (0.095) \\
+ & DLM E$^*$, Shiller data & 0.217 (0.112) & -0.048 (0.016) & 0.831 (0.109) \\
+ & Extrapolated E$^*$ & 0.260 (0.126) & -0.048 (0.016) & 0.788 (0.125) \\
+ & Extrapolated E$^*$ (full) & 0.281 (0.118) & -0.049 (0.016) & 0.768 (0.119) \\
+\addlinespace
+Price-earnings ratio  2003Q1-2022Q1 & DLM posted data & 0.775 (0.200) & -0.002 (0.005) & 0.223 (0.202) \\
+ & Reconstructed & 0.857 (0.163) & 0.001 (0.005) & 0.139 (0.164) \\
+ & DLM E$^*$, Shiller data & 0.709 (0.130) & 0.001 (0.005) & 0.285 (0.132) \\
+ & Extrapolated E$^*$ & 0.647 (0.097) & 0.001 (0.005) & 0.346 (0.100) \\
+ & Extrapolated E$^*$ (full) & 0.616 (0.062) & 0.001 (0.004) & 0.375 (0.065) \\
+\addlinespace
+Price-earnings ratio  1976Q1-2022Q1 & DLM posted data & 0.382 (0.088) &  &  \\
+ & Reconstructed & 0.416 (0.114) &  &  \\
+ & DLM E$^*$, Shiller data & 0.395 (0.093) &  &  \\
+ & Extrapolated E$^*$ & 0.366 (0.077) &  &  \\
+ & Extrapolated E$^*$ (full) & 0.367 (0.074) &  &  \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+
+\vspace{2pt}
+{\footnotesize Notes: $CF_1$, $DR_1$, $LT$ are slopes from individual regressions of one-year expected growth, minus one-year expected returns, and $\rho$ times the inferred one-year-ahead price ratio expectation on the current price ratio (De La O and Myers 2021, eqs. (8)-(9)). Return expectations: Graham-Harvey CFO survey one-year mean. Sources: "DLM posted data" = De La O-Myers posted expectations, realized growth, and price ratios (replicates their tables); "Reconstructed" = our expectations with Shiller-based realized growth and price ratios; "DLM E$^*$, Shiller data" = DLM expectations on the same Shiller-based realized growth and price ratios as the reconstruction. Small-sample-adjusted Newey-West standard errors in parentheses (4 lags). }
+\end{table}
+\begin{table}[H]
+\centering
+\caption{Extended Variance Decomposition of Price Ratios (Table V)}
+\label{tab:t5}
+\small
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{llcc}
+\toprule
+Row & Source & CF2 & DR10 \\
+\midrule
+Price-dividend ratio  2003Q1-2022Q1 & DLM posted data &  & -0.387 (0.252) \\
+ & Reconstructed & 0.302 (0.149) & -0.457 (0.306) \\
+ & Extrapolated E$^*$ & 0.361 (0.185) & -0.457 (0.306) \\
+ & Extrapolated E$^*$ (full) & 0.391 (0.174) & -0.430 (0.320) \\
+\addlinespace
+Price-earnings ratio  2003Q1-2022Q1 & DLM posted data &  & -0.168 (0.089) \\
+ & Reconstructed & 0.923 (0.173) & -0.135 (0.076) \\
+ & Extrapolated E$^*$ & 0.746 (0.116) & -0.135 (0.076) \\
+ & Extrapolated E$^*$ (full) & 0.712 (0.076) & -0.106 (0.063) \\
+\addlinespace
+Price-earnings ratio  1985Q1-2022Q1 & Reconstructed & 0.640 (0.171) &  \\
+ & Extrapolated E$^*$ & 0.533 (0.118) &  \\
+ & Extrapolated E$^*$ (full) & 0.537 (0.104) &  \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+
+\vspace{2pt}
+{\footnotesize Notes: $CF_2$ and $DR_{10}$ are slopes from individual regressions of $\sum_{j=1}^{2}\rho^{j-1}E_t^*[\Delta d_{t+j}]$ (earnings analog for $pe_t$) and $-\sum_{j=1}^{10}\rho^{j-1}E_t^*[r_{t+j}]$ on the current price ratio (eqs. (10)-(11)). Years 2-10 of return expectations are allocated flat from the Graham-Harvey 10-year forecast. Two-year expectations exist only in the reconstructed files, so $CF_2$ is blank for DLM-expectations rows. Sources: "DLM posted data" = De La O-Myers posted expectations, realized growth, and price ratios (replicates their tables); "Reconstructed" = our expectations with Shiller-based realized growth and price ratios; "DLM E$^*$, Shiller data" = DLM expectations on the same Shiller-based realized growth and price ratios as the reconstruction. Small-sample-adjusted Newey-West standard errors in parentheses (4 lags). }
+\end{table}
+\begin{table}[H]
+\centering
+\caption{Full-Horizon Decomposition of the Price-Dividend Ratio (Table VI)}
+\label{tab:t6}
+\small
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{llcccc}
+\toprule
+Row & Source & phi\_d & phi\_r & CF & DR \\
+\midrule
+Dividend growth & Reconstructed & 0.50 (0.13) &  & 0.42 (0.22) & 0.58 (0.22) \\
+ & Extrapolated E$^*$ & 0.47 (0.03) &  & 0.48 (0.23) & 0.52 (0.23) \\
+ & Extrapolated E$^*$ (full) & 0.47 (0.03) &  & 0.52 (0.22) & 0.48 (0.22) \\
+\addlinespace
+Returns & DLM posted data &  & 0.44 (0.49) & 1.08 (0.07) & -0.08 (0.07) \\
+ & Reconstructed &  & 0.44 (0.49) & 1.08 (0.08) & -0.08 (0.08) \\
+ & Extrapolated E$^*$ &  & 0.44 (0.49) & 1.08 (0.08) & -0.08 (0.08) \\
+ & Extrapolated E$^*$ (full) &  & 0.44 (0.49) & 1.09 (0.08) & -0.09 (0.08) \\
+\addlinespace
+Dividend growth and returns & Reconstructed & 0.81 (0.09) & 0.01 (1.22) & 1.05 (0.06) & -0.05 (0.06) \\
+ & Extrapolated E$^*$ & 0.77 (0.12) & 0.01 (0.49) & 1.05 (0.03) & -0.05 (0.03) \\
+ & Extrapolated E$^*$ (full) & 0.75 (0.11) & 0.01 (0.46) & 1.05 (0.03) & -0.05 (0.03) \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+
+\vspace{2pt}
+{\footnotesize Notes: Full-horizon decomposition of the price-dividend ratio, 2003Q1-2022Q1 (eqs. (12)-(16)): $CF = CF_1/(1-\rho\phi_d)$, $DR = DR_1/(1-\rho\phi_r)$. Row 1 estimates $\phi_d$ from one- and two-year dividend growth expectations and infers $DR = 1 - CF$; row 2 estimates $\phi_r$ from one- and 10-year return expectations and infers $CF = 1 - DR$; row 3 estimates both by ML constrained by $CF + DR = 1$. SEs for $CF$ and $DR$ combine the SEs of $CF_1$/$DR_1$ and $\phi_d$/$\phi_r$ by the delta method assuming independence. Sources: "DLM posted data" = De La O-Myers posted expectations, realized growth, and price ratios (replicates their tables); "Reconstructed" = our expectations with Shiller-based realized growth and price ratios; "DLM E$^*$, Shiller data" = DLM expectations on the same Shiller-based realized growth and price ratios as the reconstruction. }
+\end{table}
+\begin{table}[H]
+\centering
+\caption{Full-Horizon Decomposition of the Price-Earnings Ratio (Table VII)}
+\label{tab:t7}
+\small
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{llcccc}
+\toprule
+Row & Source & phi\_e & phi\_r & CF & DR \\
+\midrule
+Earnings growth & Reconstructed & 0.08 (0.00) &  & 0.93 (0.18) & 0.07 (0.18) \\
+ & Extrapolated E$^*$ & 0.17 (0.01) &  & 0.78 (0.12) & 0.22 (0.12) \\
+ & Extrapolated E$^*$ (full) & 0.17 (0.01) &  & 0.74 (0.08) & 0.26 (0.08) \\
+\addlinespace
+Returns & DLM posted data &  & 0.44 (0.49) & 1.00 (0.01) & -0.00 (0.01) \\
+ & Reconstructed &  & 0.44 (0.49) & 1.00 (0.01) & 0.00 (0.01) \\
+ & Extrapolated E$^*$ &  & 0.44 (0.49) & 1.00 (0.01) & 0.00 (0.01) \\
+ & Extrapolated E$^*$ (full) &  & 0.44 (0.49) & 1.00 (0.01) & 0.00 (0.01) \\
+\addlinespace
+Earnings growth and returns & Reconstructed & 0.14 (0.17) & 0.59 (0.24) & 1.00 (0.01) & 0.00 (0.01) \\
+ & Extrapolated E$^*$ & 0.36 (0.10) & 0.51 (0.31) & 1.00 (0.01) & 0.00 (0.01) \\
+ & Extrapolated E$^*$ (full) & 0.39 (0.06) & 0.55 (0.27) & 1.00 (0.01) & 0.00 (0.01) \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+
+\vspace{2pt}
+{\footnotesize Notes: Full-horizon decomposition of the price-earnings ratio, 2003Q1-2022Q1 (eqs. (17)-(19)): identical estimation to Table VI with earnings growth expectations and the price-earnings ratio; the joint row imposes $CF + DR = 1$, which is approximate for $pe$ (payout-ratio news dropped). Sources: "DLM posted data" = De La O-Myers posted expectations, realized growth, and price ratios (replicates their tables); "Reconstructed" = our expectations with Shiller-based realized growth and price ratios; "DLM E$^*$, Shiller data" = DLM expectations on the same Shiller-based realized growth and price ratios as the reconstruction. }
+\end{table}
+\end{document}
